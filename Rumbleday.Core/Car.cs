@@ -34,8 +34,7 @@ namespace Rumbleday.Core
                 {
                     case CarType.Passenger:
                         return 50;
-                    case CarType.Trucks:
-                        return 25 + ((DateTime.Now.Year - Year.Year) > 20 ? 20 : DateTime.Now.Year - Year.Year);
+                    case CarType.Trucks:                        
                     case CarType.Utilitary:
                         return 25 + ((DateTime.Now.Year - Year.Year) > 20 ? 20 : DateTime.Now.Year - Year.Year);
                     default: return 0;
